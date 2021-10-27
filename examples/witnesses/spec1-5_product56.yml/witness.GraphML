@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+      <data key="witness-type">violation_witness</data>
+      <data key="producer">JBMC</data>
+      <data key="specification">CHECK( init(Main.main()), LTL(G assert) )</data>
+      <data key="programfile">/tmp/JBMC-benchmark.cpdpoP/src/org/sosy_lab/sv_benchmarks/Verifier.java</data>
+      <data key="programhash">ab1de7ac3f9a9ce17800fd6523d6185f11e0413f</data>
+      <data key="architecture">64bit</data>
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="1120.71">
+      <data key="entry">true</data>
+    </node>
+    <edge source="1120.71" target="1127.73">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">545</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1127.73"/>
+    <edge source="1127.73" target="1134.75">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">546</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1134.75"/>
+    <edge source="1134.75" target="1141.77">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">547</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1141.77"/>
+    <edge source="1141.77" target="1148.79">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">548</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1148.79"/>
+    <edge source="1148.79" target="1155.81">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">549</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1155.81"/>
+    <edge source="1155.81" target="1162.83">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">550</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1162.83"/>
+    <edge source="1162.83" target="1169.85">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">551</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1169.85"/>
+    <edge source="1169.85" target="1120.121">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">552</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1120.121"/>
+    <edge source="1120.121" target="1127.123">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">545</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1127.123"/>
+    <edge source="1127.123" target="1134.125">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">546</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1134.125"/>
+    <edge source="1134.125" target="1141.127">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">547</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1141.127"/>
+    <edge source="1141.127" target="1148.129">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">548</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1148.129"/>
+    <edge source="1148.129" target="1155.131">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">549</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1155.131"/>
+    <edge source="1155.131" target="1162.133">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">550</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1162.133"/>
+    <edge source="1162.133" target="1169.135">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">551</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1169.135"/>
+    <edge source="1169.135" target="3996.194">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">552</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3996.194"/>
+    <edge source="3996.194" target="673.273">
+      <data key="originfile">Main.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="673.273"/>
+    <edge source="673.273" target="669.279">
+      <data key="originfile">Main.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+      <data key="assumption">cleanupTimeShifts = 2;</data>
+      <data key="assumption.scope">java::Main.&lt;clinit&gt;:()V</data>
+    </edge>
+    <node id="669.279"/>
+    <edge source="669.279" target="2597.297">
+      <data key="originfile">Main.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+      <data key="assumption">maxLength = 3;</data>
+      <data key="assumption.scope">java</data>
+    </edge>
+    <node id="2597.297"/>
+    <edge source="2597.297" target="902.303">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="902.303"/>
+    <edge source="902.303" target="861.309">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="861.309"/>
+    <edge source="861.309" target="872.316">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="872.316"/>
+    <edge source="872.316" target="873.317">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+      <data key="assumption">cl = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.getClassLoader:()Ljava/lang/ClassLoader;</data>
+    </edge>
+    <node id="873.317"/>
+    <edge source="873.317" target="911.321">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">263</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="911.321"/>
+    <edge source="911.321" target="917.323">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="917.323"/>
+    <edge source="917.323" target="918.324">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+      <data key="assumption">loader = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.desiredAssertionStatus:()Z</data>
+    </edge>
+    <node id="918.324"/>
+    <edge source="918.324" target="1179.340">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">494</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1179.340"/>
+    <edge source="1179.340" target="1197.376">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">114</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1197.376"/>
+    <edge source="1197.376" target="1203.378">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">114</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1203.378"/>
+    <edge source="1203.378" target="1222.414">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">115</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1222.414"/>
+    <edge source="1222.414" target="924.420">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">115</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="924.420"/>
+    <edge source="924.420" target="2606.430">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">495</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2606.430"/>
+    <edge source="2606.430" target="2620.441">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2620.441"/>
+    <edge source="2620.441" target="12.447">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="12.447"/>
+    <edge source="12.447" target="19.462">
+      <data key="originfile">Main.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="19.462"/>
+    <edge source="19.462" target="294.468">
+      <data key="originfile">Main.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="294.468"/>
+    <edge source="294.468" target="0.472">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.472"/>
+    <edge source="0.472" target="303.475">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="303.475"/>
+    <edge source="303.475" target="307.476">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="307.476"/>
+    <edge source="307.476" target="316.478">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="316.478"/>
+    <edge source="316.478" target="325.480">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="325.480"/>
+    <edge source="325.480" target="327.490">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="327.490"/>
+    <edge source="327.490" target="1282.494">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1282.494"/>
+    <edge source="1282.494" target="0.498">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.498"/>
+    <edge source="0.498" target="1289.501">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1289.501"/>
+    <edge source="1289.501" target="2670.524">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2670.524"/>
+    <edge source="2670.524" target="2678.535">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">6</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2678.535"/>
+    <edge source="2678.535" target="2627.541">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">6</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2627.541"/>
+    <edge source="2627.541" target="1258.547">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1258.547"/>
+    <edge source="1258.547" target="0.551">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.551"/>
+    <edge source="0.551" target="1265.554">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1265.554"/>
+    <edge source="1265.554" target="1267.555">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1267.555"/>
+    <edge source="1267.555" target="1274.557">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">118</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1274.557"/>
+    <edge source="1274.557" target="2634.560">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">119</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2634.560"/>
+    <edge source="2634.560" target="2689.562">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2689.562"/>
+    <edge source="2689.562" target="2696.569">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">6</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2696.569"/>
+    <edge source="2696.569" target="2704.577">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">6</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2704.577"/>
+    <edge source="2704.577" target="2712.588">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2712.588"/>
+    <edge source="2712.588" target="2627.594">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2627.594"/>
+    <edge source="2627.594" target="1258.600">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1258.600"/>
+    <edge source="1258.600" target="0.604">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.604"/>
+    <edge source="0.604" target="1265.607">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1265.607"/>
+    <edge source="1265.607" target="1267.608">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1267.608"/>
+    <edge source="1267.608" target="1274.610">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">118</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1274.610"/>
+    <edge source="1274.610" target="2634.613">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">119</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2634.613"/>
+    <edge source="2634.613" target="2723.615">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2723.615"/>
+    <edge source="2723.615" target="2730.622">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2730.622"/>
+    <edge source="2730.622" target="2738.630">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2738.630"/>
+    <edge source="2738.630" target="2746.641">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2746.641"/>
+    <edge source="2746.641" target="2627.647">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2627.647"/>
+    <edge source="2627.647" target="1258.653">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1258.653"/>
+    <edge source="1258.653" target="0.657">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.657"/>
+    <edge source="0.657" target="1265.660">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1265.660"/>
+    <edge source="1265.660" target="1267.661">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">117</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1267.661"/>
+    <edge source="1267.661" target="1274.663">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">118</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1274.663"/>
+    <edge source="1274.663" target="2634.666">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">119</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2634.666"/>
+    <edge source="2634.666" target="2757.668">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2757.668"/>
+    <edge source="2757.668" target="2764.675">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2764.675"/>
+    <edge source="2764.675" target="2771.677">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">8</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2771.677"/>
+    <edge source="2771.677" target="2791.708">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2791.708"/>
+    <edge source="2791.708" target="2798.709">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2798.709"/>
+    <edge source="2798.709" target="2829.722">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2829.722"/>
+    <edge source="2829.722" target="2837.723">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2837.723"/>
+    <edge source="2837.723" target="2870.736">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2870.736"/>
+    <edge source="2870.736" target="2879.737">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2879.737"/>
+    <edge source="2879.737" target="2914.750">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2914.750"/>
+    <edge source="2914.750" target="1292.756">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1292.756"/>
+    <edge source="1292.756" target="1294.757">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">11</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1294.757"/>
+    <edge source="1294.757" target="1301.759">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">11</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1301.759"/>
+    <edge source="1301.759" target="336.762">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="336.762"/>
+    <edge source="336.762" target="340.763">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="340.763"/>
+    <edge source="340.763" target="3547.779">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3547.779"/>
+    <edge source="3547.779" target="902.785">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="902.785"/>
+    <edge source="902.785" target="861.791">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="861.791"/>
+    <edge source="861.791" target="872.798">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="872.798"/>
+    <edge source="872.798" target="873.799">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+      <data key="assumption">cl = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.getClassLoader:()Ljava/lang/ClassLoader;</data>
+    </edge>
+    <node id="873.799"/>
+    <edge source="873.799" target="911.803">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">263</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="911.803"/>
+    <edge source="911.803" target="917.805">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="917.805"/>
+    <edge source="917.805" target="918.806">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+      <data key="assumption">loader = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.desiredAssertionStatus:()Z</data>
+    </edge>
+    <node id="918.806"/>
+    <edge source="918.806" target="924.814">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">494</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="924.814"/>
+    <edge source="924.814" target="3556.824">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">495</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3556.824"/>
+    <edge source="3556.824" target="3570.835">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3570.835"/>
+    <edge source="3570.835" target="350.841">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="350.841"/>
+    <edge source="350.841" target="356.854">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="356.854"/>
+    <edge source="356.854" target="1309.860">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1309.860"/>
+    <edge source="1309.860" target="0.864">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.864"/>
+    <edge source="0.864" target="1316.867">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1316.867"/>
+    <edge source="1316.867" target="1318.868">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">12</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1318.868"/>
+    <edge source="1318.868" target="1325.870">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1325.870"/>
+    <edge source="1325.870" target="1332.872">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1332.872"/>
+    <edge source="1332.872" target="373.875">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">13</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="373.875"/>
+    <edge source="373.875" target="377.876">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="377.876"/>
+    <edge source="377.876" target="29.879">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="29.879"/>
+    <edge source="29.879" target="34.880">
+      <data key="originfile">Main.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="34.880"/>
+    <edge source="34.880" target="35.881">
+      <data key="originfile">Main.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="35.881"/>
+    <edge source="35.881" target="45.890">
+      <data key="originfile">Main.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+      <data key="assumption">counter = 0;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="45.890"/>
+    <edge source="45.890" target="50.915">
+      <data key="originfile">Main.java</data>
+      <data key="startline">20</data>
+      <data key="threadId">0</data>
+      <data key="assumption">counter = 1;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="50.915"/>
+    <edge source="50.915" target="55.940">
+      <data key="originfile">Main.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action1 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="55.940"/>
+    <edge source="55.940" target="60.965">
+      <data key="originfile">Main.java</data>
+      <data key="startline">23</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action2 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="60.965"/>
+    <edge source="60.965" target="61.966">
+      <data key="originfile">Main.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action3 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="61.966"/>
+    <edge source="61.966" target="62.967">
+      <data key="originfile">Main.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action4 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="62.967"/>
+    <edge source="62.967" target="75.993">
+      <data key="originfile">Main.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="75.993"/>
+    <edge source="75.993" target="77.994">
+      <data key="originfile">Main.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action4 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="77.994"/>
+    <edge source="77.994" target="109.995">
+      <data key="originfile">Main.java</data>
+      <data key="startline">28</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="109.995"/>
+    <edge source="109.995" target="110.996">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.996"/>
+    <edge source="110.996" target="411.1000">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="411.1000"/>
+    <edge source="411.1000" target="1430.1007">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1430.1007"/>
+    <edge source="1430.1007" target="1444.1012">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1444.1012"/>
+    <edge source="1444.1012" target="424.1015">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="424.1015"/>
+    <edge source="424.1015" target="128.1017">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="128.1017"/>
+    <edge source="128.1017" target="141.1018">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="141.1018"/>
+    <edge source="141.1018" target="174.1019">
+      <data key="originfile">Main.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="174.1019"/>
+    <edge source="174.1019" target="175.1020">
+      <data key="originfile">Main.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="175.1020"/>
+    <edge source="175.1020" target="472.1025">
+      <data key="originfile">Main.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="472.1025"/>
+    <edge source="472.1025" target="1456.1030">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1030"/>
+    <edge source="1456.1030" target="487.1033">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="487.1033"/>
+    <edge source="487.1033" target="492.1035">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="492.1035"/>
+    <edge source="492.1035" target="496.1036">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="496.1036"/>
+    <edge source="496.1036" target="1464.1041">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1464.1041"/>
+    <edge source="1464.1041" target="1481.1049">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">87</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1481.1049"/>
+    <edge source="1481.1049" target="1484.1051">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">90</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1484.1051"/>
+    <edge source="1484.1051" target="1508.1053">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">90</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1508.1053"/>
+    <edge source="1508.1053" target="511.1056">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">91</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="511.1056"/>
+    <edge source="511.1056" target="193.1059">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="193.1059"/>
+    <edge source="193.1059" target="206.1060">
+      <data key="originfile">Main.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="206.1060"/>
+    <edge source="206.1060" target="517.1065">
+      <data key="originfile">Main.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="517.1065"/>
+    <edge source="517.1065" target="1456.1070">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1070"/>
+    <edge source="1456.1070" target="532.1073">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="532.1073"/>
+    <edge source="532.1073" target="537.1075">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="537.1075"/>
+    <edge source="537.1075" target="553.1078">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="553.1078"/>
+    <edge source="553.1078" target="1585.1083">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1585.1083"/>
+    <edge source="1585.1083" target="1607.1085">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">17</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1607.1085"/>
+    <edge source="1607.1085" target="570.1089">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="570.1089"/>
+    <edge source="570.1089" target="574.1090">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="574.1090"/>
+    <edge source="574.1090" target="1456.1095">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1095"/>
+    <edge source="1456.1095" target="591.1098">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="591.1098"/>
+    <edge source="591.1098" target="597.1100">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="597.1100"/>
+    <edge source="597.1100" target="224.1104">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="224.1104"/>
+    <edge source="224.1104" target="45.1114">
+      <data key="originfile">Main.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="45.1114"/>
+    <edge source="45.1114" target="50.1139">
+      <data key="originfile">Main.java</data>
+      <data key="startline">20</data>
+      <data key="threadId">0</data>
+      <data key="assumption">counter = 2;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="50.1139"/>
+    <edge source="50.1139" target="55.1164">
+      <data key="originfile">Main.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action1 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="55.1164"/>
+    <edge source="55.1164" target="60.1189">
+      <data key="originfile">Main.java</data>
+      <data key="startline">23</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action2 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="60.1189"/>
+    <edge source="60.1189" target="61.1190">
+      <data key="originfile">Main.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action3 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="61.1190"/>
+    <edge source="61.1190" target="62.1191">
+      <data key="originfile">Main.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action4 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="62.1191"/>
+    <edge source="62.1191" target="75.1217">
+      <data key="originfile">Main.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="75.1217"/>
+    <edge source="75.1217" target="77.1218">
+      <data key="originfile">Main.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action4 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="77.1218"/>
+    <edge source="77.1218" target="109.1219">
+      <data key="originfile">Main.java</data>
+      <data key="startline">28</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="109.1219"/>
+    <edge source="109.1219" target="110.1220">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.1220"/>
+    <edge source="110.1220" target="411.1224">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="411.1224"/>
+    <edge source="411.1224" target="1430.1231">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1430.1231"/>
+    <edge source="1430.1231" target="1444.1235">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1444.1235"/>
+    <edge source="1444.1235" target="424.1238">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="424.1238"/>
+    <edge source="424.1238" target="128.1240">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="128.1240"/>
+    <edge source="128.1240" target="141.1241">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="141.1241"/>
+    <edge source="141.1241" target="174.1242">
+      <data key="originfile">Main.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="174.1242"/>
+    <edge source="174.1242" target="175.1243">
+      <data key="originfile">Main.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="175.1243"/>
+    <edge source="175.1243" target="472.1248">
+      <data key="originfile">Main.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="472.1248"/>
+    <edge source="472.1248" target="1456.1253">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1253"/>
+    <edge source="1456.1253" target="487.1256">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="487.1256"/>
+    <edge source="487.1256" target="492.1258">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="492.1258"/>
+    <edge source="492.1258" target="193.1262">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="193.1262"/>
+    <edge source="193.1262" target="206.1263">
+      <data key="originfile">Main.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="206.1263"/>
+    <edge source="206.1263" target="517.1268">
+      <data key="originfile">Main.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="517.1268"/>
+    <edge source="517.1268" target="1456.1273">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1273"/>
+    <edge source="1456.1273" target="532.1276">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="532.1276"/>
+    <edge source="532.1276" target="537.1278">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="537.1278"/>
+    <edge source="537.1278" target="553.1281">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="553.1281"/>
+    <edge source="553.1281" target="1585.1286">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1585.1286"/>
+    <edge source="1585.1286" target="1607.1288">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">17</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1607.1288"/>
+    <edge source="1607.1288" target="570.1292">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="570.1292"/>
+    <edge source="570.1292" target="574.1293">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="574.1293"/>
+    <edge source="574.1293" target="1456.1298">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1298"/>
+    <edge source="1456.1298" target="591.1301">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="591.1301"/>
+    <edge source="591.1301" target="597.1303">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="597.1303"/>
+    <edge source="597.1303" target="224.1307">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="224.1307"/>
+    <edge source="224.1307" target="45.1317">
+      <data key="originfile">Main.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="45.1317"/>
+    <edge source="45.1317" target="50.1342">
+      <data key="originfile">Main.java</data>
+      <data key="startline">20</data>
+      <data key="threadId">0</data>
+      <data key="assumption">counter = 3;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="50.1342"/>
+    <edge source="50.1342" target="55.1367">
+      <data key="originfile">Main.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action1 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="55.1367"/>
+    <edge source="55.1367" target="60.1392">
+      <data key="originfile">Main.java</data>
+      <data key="startline">23</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action2 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="60.1392"/>
+    <edge source="60.1392" target="61.1393">
+      <data key="originfile">Main.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action3 = true;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="61.1393"/>
+    <edge source="61.1393" target="62.1394">
+      <data key="originfile">Main.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+      <data key="assumption">action4 = false;</data>
+      <data key="assumption.scope">java::Main.randomSequenceOfActions:(I)V</data>
+    </edge>
+    <node id="62.1394"/>
+    <edge source="62.1394" target="77.1396">
+      <data key="originfile">Main.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="77.1396"/>
+    <edge source="77.1396" target="78.1397">
+      <data key="originfile">Main.java</data>
+      <data key="startline">28</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="78.1397"/>
+    <edge source="78.1397" target="396.1401">
+      <data key="originfile">Main.java</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="396.1401"/>
+    <edge source="396.1401" target="3060.1429">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3060.1429"/>
+    <edge source="3060.1429" target="2638.1439">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2638.1439"/>
+    <edge source="2638.1439" target="2641.1440">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2641.1440"/>
+    <edge source="2641.1440" target="2655.1490">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2655.1490"/>
+    <edge source="2655.1490" target="3066.1493">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3066.1493"/>
+    <edge source="3066.1493" target="3073.1495">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3073.1495"/>
+    <edge source="3073.1495" target="3099.1521">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3099.1521"/>
+    <edge source="3099.1521" target="3107.1529">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3107.1529"/>
+    <edge source="3107.1529" target="3114.1537">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3114.1537"/>
+    <edge source="3114.1537" target="3118.1538">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3118.1538"/>
+    <edge source="3118.1538" target="1250.1542">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1250.1542"/>
+    <edge source="1250.1542" target="3127.1545">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">103</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3127.1545"/>
+    <edge source="3127.1545" target="3133.1547">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3133.1547"/>
+    <edge source="3133.1547" target="3165.1561">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3165.1561"/>
+    <edge source="3165.1561" target="3170.1569">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3170.1569"/>
+    <edge source="3170.1569" target="3174.1570">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3174.1570"/>
+    <edge source="3174.1570" target="1250.1574">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1250.1574"/>
+    <edge source="1250.1574" target="3183.1577">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">103</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3183.1577"/>
+    <edge source="3183.1577" target="3189.1579">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3189.1579"/>
+    <edge source="3189.1579" target="3221.1593">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3221.1593"/>
+    <edge source="3221.1593" target="3226.1601">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3226.1601"/>
+    <edge source="3226.1601" target="3230.1602">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3230.1602"/>
+    <edge source="3230.1602" target="1250.1606">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1250.1606"/>
+    <edge source="1250.1606" target="3239.1609">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">103</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3239.1609"/>
+    <edge source="3239.1609" target="3245.1611">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3245.1611"/>
+    <edge source="3245.1611" target="1342.1623">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">16</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1342.1623"/>
+    <edge source="1342.1623" target="1345.1624">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">27</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1345.1624"/>
+    <edge source="1345.1624" target="1250.1629">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">27</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1250.1629"/>
+    <edge source="1250.1629" target="1360.1632">
+      <data key="originfile">java/lang/Enum.java</data>
+      <data key="startline">103</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1360.1632"/>
+    <edge source="1360.1632" target="1365.1634">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">27</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1365.1634"/>
+    <edge source="1365.1634" target="1387.1642">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">27</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1387.1642"/>
+    <edge source="1387.1642" target="1413.1650">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">27</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1413.1650"/>
+    <edge source="1413.1650" target="1417.1651">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1417.1651"/>
+    <edge source="1417.1651" target="409.1655">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="409.1655"/>
+    <edge source="409.1655" target="96.1657">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="96.1657"/>
+    <edge source="96.1657" target="109.1658">
+      <data key="originfile">Main.java</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="109.1658"/>
+    <edge source="109.1658" target="110.1659">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="110.1659"/>
+    <edge source="110.1659" target="411.1663">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="411.1663"/>
+    <edge source="411.1663" target="1430.1670">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1430.1670"/>
+    <edge source="1430.1670" target="1444.1675">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1444.1675"/>
+    <edge source="1444.1675" target="424.1678">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">38</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="424.1678"/>
+    <edge source="424.1678" target="128.1680">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">22</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="128.1680"/>
+    <edge source="128.1680" target="141.1681">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="141.1681"/>
+    <edge source="141.1681" target="142.1682">
+      <data key="originfile">Main.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="142.1682"/>
+    <edge source="142.1682" target="427.1687">
+      <data key="originfile">Main.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="427.1687"/>
+    <edge source="427.1687" target="1456.1692">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">30</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1692"/>
+    <edge source="1456.1692" target="442.1695">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="442.1695"/>
+    <edge source="442.1695" target="447.1697">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">30</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="447.1697"/>
+    <edge source="447.1697" target="451.1698">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">30</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="451.1698"/>
+    <edge source="451.1698" target="1518.1709">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">30</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1518.1709"/>
+    <edge source="1518.1709" target="1521.1711">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">95</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1521.1711"/>
+    <edge source="1521.1711" target="1545.1713">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">95</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1545.1713"/>
+    <edge source="1545.1713" target="466.1716">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">96</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="466.1716"/>
+    <edge source="466.1716" target="160.1719">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">30</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="160.1719"/>
+    <edge source="160.1719" target="206.1721">
+      <data key="originfile">Main.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="206.1721"/>
+    <edge source="206.1721" target="517.1726">
+      <data key="originfile">Main.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="517.1726"/>
+    <edge source="517.1726" target="1456.1731">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1731"/>
+    <edge source="1456.1731" target="532.1734">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="532.1734"/>
+    <edge source="532.1734" target="537.1736">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="537.1736"/>
+    <edge source="537.1736" target="541.1737">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="541.1737"/>
+    <edge source="541.1737" target="1555.1742">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1555.1742"/>
+    <edge source="1555.1742" target="2579.1747">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">116</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2579.1747"/>
+    <edge source="2579.1747" target="1570.1750">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1570.1750"/>
+    <edge source="1570.1750" target="1575.1752">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">116</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1575.1752"/>
+    <edge source="1575.1752" target="549.1755">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">116</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="549.1755"/>
+    <edge source="549.1755" target="553.1757">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">35</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="553.1757"/>
+    <edge source="553.1757" target="1585.1762">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1585.1762"/>
+    <edge source="1585.1762" target="1607.1764">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">17</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1607.1764"/>
+    <edge source="1607.1764" target="1614.1766">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1614.1766"/>
+    <edge source="1614.1766" target="3278.1770">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3278.1770"/>
+    <edge source="3278.1770" target="3315.1772">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">41</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3315.1772"/>
+    <edge source="3315.1772" target="3495.1776">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">44</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3495.1776"/>
+    <edge source="3495.1776" target="3532.1778">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3532.1778"/>
+    <edge source="3532.1778" target="3416.1782">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3416.1782"/>
+    <edge source="3416.1782" target="3424.1785">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3424.1785"/>
+    <edge source="3424.1785" target="3330.1791">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3330.1791"/>
+    <edge source="3330.1791" target="3020.1803">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">79</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3020.1803"/>
+    <edge source="3020.1803" target="3023.1804">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">55</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3023.1804"/>
+    <edge source="3023.1804" target="3347.1809">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">55</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3347.1809"/>
+    <edge source="3347.1809" target="3353.1811">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">79</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3353.1811"/>
+    <edge source="3353.1811" target="3432.1816">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">79</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3432.1816"/>
+    <edge source="3432.1816" target="3437.1818">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3437.1818"/>
+    <edge source="3437.1818" target="3441.1819">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3441.1819"/>
+    <edge source="3441.1819" target="3363.1823">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3363.1823"/>
+    <edge source="3363.1823" target="3449.1826">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3449.1826"/>
+    <edge source="3449.1826" target="3452.1827">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3452.1827"/>
+    <edge source="3452.1827" target="3540.1836">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">26</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3540.1836"/>
+    <edge source="3540.1836" target="3323.1839">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">36</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="3323.1839"/>
+    <edge source="3323.1839" target="1621.1842">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">44</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1621.1842"/>
+    <edge source="1621.1842" target="570.1845">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">18</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="570.1845"/>
+    <edge source="570.1845" target="574.1846">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">37</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="574.1846"/>
+    <edge source="574.1846" target="1456.1851">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1456.1851"/>
+    <edge source="1456.1851" target="591.1854">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">100</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="591.1854"/>
+    <edge source="591.1854" target="597.1856">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="597.1856"/>
+    <edge source="597.1856" target="601.1857">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">39</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="601.1857"/>
+    <edge source="601.1857" target="1631.1867">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1631.1867"/>
+    <edge source="1631.1867" target="2563.1872">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">55</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2563.1872"/>
+    <edge source="2563.1872" target="1656.1875">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">75</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1656.1875"/>
+    <edge source="1656.1875" target="1666.1877">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">55</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1666.1877"/>
+    <edge source="1666.1877" target="1667.1878">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">55</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1667.1878"/>
+    <edge source="1667.1878" target="2571.1882">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">57</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2571.1882"/>
+    <edge source="2571.1882" target="1680.1885">
+      <data key="originfile">MinePumpSystem/Environment.java</data>
+      <data key="startline">42</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1680.1885"/>
+    <edge source="1680.1885" target="1690.1887">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">57</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1690.1887"/>
+    <edge source="1690.1887" target="1691.1888">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">57</data>
+      <data key="threadId">0</data>
+      <data key="assumption">b1 = true;</data>
+      <data key="assumption.scope">java::Actions.Specification1:()V</data>
+    </edge>
+    <node id="1691.1888"/>
+    <edge source="1691.1888" target="2579.1893">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="2579.1893"/>
+    <edge source="2579.1893" target="1716.1896">
+      <data key="originfile">MinePumpSystem/MinePump.java</data>
+      <data key="startline">53</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1716.1896"/>
+    <edge source="1716.1896" target="1726.1898">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1726.1898"/>
+    <edge source="1726.1898" target="1727.1899">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+      <data key="assumption">b2 = true;</data>
+      <data key="assumption.scope">java::Actions.Specification1:()V</data>
+    </edge>
+    <node id="1727.1899"/>
+    <edge source="1727.1899" target="1735.1900">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">60</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1735.1900"/>
+    <edge source="1735.1900" target="1737.1907">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">60</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1737.1907"/>
+    <edge source="1737.1907" target="1747.1910">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">61</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1747.1910"/>
+    <edge source="1747.1910" target="1749.1920">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">61</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1749.1920"/>
+    <edge source="1749.1920" target="1241.1924">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">61</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1241.1924"/>
+    <edge source="1241.1924" target="1232.1928">
+      <data key="originfile">java/lang/AssertionError.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1232.1928"/>
+    <edge source="1232.1928" target="702.1932">
+      <data key="originfile">java/lang/Error.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="702.1932"/>
+    <edge source="702.1932" target="0.1936">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">264</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.1936"/>
+    <edge source="0.1936" target="709.1939">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="709.1939"/>
+    <edge source="709.1939" target="711.1940">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">264</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="711.1940"/>
+    <edge source="711.1940" target="718.1942">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">201</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="718.1942"/>
+    <edge source="718.1942" target="1239.1945">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">266</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1239.1945"/>
+    <edge source="1239.1945" target="1248.1947">
+      <data key="originfile">java/lang/Error.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1248.1947"/>
+    <edge source="1248.1947" target="1763.1949">
+      <data key="originfile">java/lang/AssertionError.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1763.1949"/>
+    <edge source="1763.1949" target="1772.1950">
+      <data key="originfile">Actions.java</data>
+      <data key="startline">61</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1772.1950">
+      <data key="violation">true</data>
+    </node>
+  </graph>
+</graphml>

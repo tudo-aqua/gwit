@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+      <data key="witness-type">violation_witness</data>
+      <data key="producer">JBMC</data>
+      <data key="specification">CHECK( init(Main.main()), LTL(G assert) )</data>
+      <data key="programfile">/tmp/JBMC-benchmark.4tdjzx/src/org/sosy_lab/sv_benchmarks/Verifier.java</data>
+      <data key="programhash">ab1de7ac3f9a9ce17800fd6523d6185f11e0413f</data>
+      <data key="architecture">64bit</data>
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="652.35">
+      <data key="entry">true</data>
+    </node>
+    <edge source="652.35" target="659.37">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">545</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="659.37"/>
+    <edge source="659.37" target="666.39">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">546</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="666.39"/>
+    <edge source="666.39" target="673.41">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">547</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="673.41"/>
+    <edge source="673.41" target="680.43">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">548</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="680.43"/>
+    <edge source="680.43" target="687.45">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">549</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="687.45"/>
+    <edge source="687.45" target="694.47">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">550</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="694.47"/>
+    <edge source="694.47" target="701.49">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">551</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="701.49"/>
+    <edge source="701.49" target="1057.76">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">552</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="1057.76"/>
+    <edge source="1057.76" target="252.123">
+      <data key="originfile">Main.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="252.123"/>
+    <edge source="252.123" target="253.124">
+      <data key="originfile">Main.java</data>
+      <data key="startline">24</data>
+      <data key="threadId">0</data>
+      <data key="assumption">m = 0;</data>
+      <data key="assumption.scope">java::Main.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="253.124"/>
+    <edge source="253.124" target="257.125">
+      <data key="originfile">Main.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="257.125"/>
+    <edge source="257.125" target="265.140">
+      <data key="originfile">Main.java</data>
+      <data key="startline">25</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="265.140"/>
+    <edge source="265.140" target="266.141">
+      <data key="originfile">Main.java</data>
+      <data key="startline">28</data>
+      <data key="threadId">0</data>
+      <data key="assumption">n = 0;</data>
+      <data key="assumption.scope">java::Main.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="266.141"/>
+    <edge source="266.141" target="270.142">
+      <data key="originfile">Main.java</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="270.142"/>
+    <edge source="270.142" target="348.159">
+      <data key="originfile">Main.java</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="348.159"/>
+    <edge source="348.159" target="78.165">
+      <data key="originfile">Main.java</data>
+      <data key="startline">11</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="78.165"/>
+    <edge source="78.165" target="564.171">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="564.171"/>
+    <edge source="564.171" target="575.178">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="575.178"/>
+    <edge source="575.178" target="576.179">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">262</data>
+      <data key="threadId">0</data>
+      <data key="assumption">cl = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.getClassLoader:()Ljava/lang/ClassLoader;</data>
+    </edge>
+    <node id="576.179"/>
+    <edge source="576.179" target="87.183">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">263</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="87.183"/>
+    <edge source="87.183" target="93.185">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="93.185"/>
+    <edge source="93.185" target="94.186">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">492</data>
+      <data key="threadId">0</data>
+      <data key="assumption">loader = null;</data>
+      <data key="assumption.scope">java::java.lang.Class.desiredAssertionStatus:()Z</data>
+    </edge>
+    <node id="94.186"/>
+    <edge source="94.186" target="711.202">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">494</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="711.202"/>
+    <edge source="711.202" target="729.238">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">114</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="729.238"/>
+    <edge source="729.238" target="735.240">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">114</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="735.240"/>
+    <edge source="735.240" target="754.276">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">115</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="754.276"/>
+    <edge source="754.276" target="100.282">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">115</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="100.282"/>
+    <edge source="100.282" target="357.292">
+      <data key="originfile">java/lang/Class.java</data>
+      <data key="startline">495</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="357.292"/>
+    <edge source="357.292" target="371.303">
+      <data key="originfile">Main.java</data>
+      <data key="startline">11</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="371.303"/>
+    <edge source="371.303" target="277.309">
+      <data key="originfile">Main.java</data>
+      <data key="startline">11</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="277.309"/>
+    <edge source="277.309" target="8.314">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="8.314"/>
+    <edge source="8.314" target="286.318">
+      <data key="originfile">Main.java</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="286.318"/>
+    <edge source="286.318" target="296.320">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="296.320"/>
+    <edge source="296.320" target="297.321">
+      <data key="originfile">Main.java</data>
+      <data key="startline">32</data>
+      <data key="threadId">0</data>
+      <data key="assumption">result = 1;</data>
+      <data key="assumption.scope">java::Main.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="297.321"/>
+    <edge source="297.321" target="301.322">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="301.322"/>
+    <edge source="301.322" target="302.323">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="302.323"/>
+    <edge source="302.323" target="304.330">
+      <data key="originfile">Main.java</data>
+      <data key="startline">33</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="304.330"/>
+    <edge source="304.330" target="314.333">
+      <data key="originfile">Main.java</data>
+      <data key="startline">34</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="314.333"/>
+    <edge source="314.333" target="316.343">
+      <data key="originfile">Main.java</data>
+      <data key="startline">34</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="316.343"/>
+    <edge source="316.343" target="67.347">
+      <data key="originfile">Main.java</data>
+      <data key="startline">34</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="67.347"/>
+    <edge source="67.347" target="764.351">
+      <data key="originfile">java/lang/AssertionError.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="764.351"/>
+    <edge source="764.351" target="405.355">
+      <data key="originfile">java/lang/Error.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="405.355"/>
+    <edge source="405.355" target="0.359">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">264</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.359"/>
+    <edge source="0.359" target="412.362">
+      <data key="originfile">java/lang/Object.java</data>
+      <data key="startline">40</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="412.362"/>
+    <edge source="412.362" target="414.363">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">264</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="414.363"/>
+    <edge source="414.363" target="421.365">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">201</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="421.365"/>
+    <edge source="421.365" target="771.368">
+      <data key="originfile">java/lang/Throwable.java</data>
+      <data key="startline">266</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="771.368"/>
+    <edge source="771.368" target="74.370">
+      <data key="originfile">java/lang/Error.java</data>
+      <data key="startline">58</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="74.370"/>
+    <edge source="74.370" target="330.372">
+      <data key="originfile">java/lang/AssertionError.java</data>
+      <data key="startline">49</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="330.372"/>
+    <edge source="330.372" target="339.373">
+      <data key="originfile">Main.java</data>
+      <data key="startline">34</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="339.373">
+      <data key="violation">true</data>
+    </node>
+  </graph>
+</graphml>

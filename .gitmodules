@@ -1,0 +1,9 @@
+[submodule "verifier-stub"]
+	path = verifier-stub
+	url = git@github.com:tudo-aqua/verifier-stub.git
+[submodule "dse"]
+	path = dse
+	url = git@github.com:tudo-aqua/dse.git
+[submodule "spout"]
+	path = spout
+	url = git@github.com:tudo-aqua/spout.git

@@ -1,7 +1,11 @@
+# SPDX-FileCopyrightText: 2021 Falk Howar falk.howar@tu-dortmund.de
+# SPDX-License-Identifier: Apache-2.0
+
 import xml.etree.ElementTree as ET
 import sys
 import re
 import os
+import tempfile
 from sys import exit
 from fnmatch import fnmatch
 from shutil import copyfile
@@ -13,12 +17,6 @@ def mkDirP(dirs):
         except OSError as e:
             if e.errno != errno.EEXIST:
                 raise
-
-# witness tmp dir
-# TODO: actual tmp dir?
-wtTmp="wtTmp"
-mkDirP(wtTmp)
-
 
 # parse arguments
 if len(sys.argv) <= 2:
@@ -74,8 +72,14 @@ for e in witness.findall(".//data[@key='assumption']/.."):
         else:
             assumptions[file][line].append(assume)
 
-#print(assumptions)
+# print(assumptions)
 
+# witness tmp dir
+# TODO: actual tmp dir?
+wtTmp=tempfile.TemporaryDirectory()
+print(wtTmp)
+
+# weave witness and instance
 uid = 0
 for classname in classpath:
     filename = classpath[classname]
@@ -100,3 +104,13 @@ for classname in classpath:
                         #print(assumeCode)
                         line += assumeCode
                     fout.write(line)
+
+
+# compile
+
+# run gdart on benchmark
+
+# output verdict
+
+
+

@@ -9,6 +9,7 @@ import tempfile
 from sys import exit
 from fnmatch import fnmatch
 from shutil import copyfile
+import yaml
 
 def mkDirP(dirs):
     if not os.path.exists(dirs):
@@ -20,36 +21,47 @@ def mkDirP(dirs):
 
 # parse arguments
 if len(sys.argv) <= 2:
-    if sys.argv[1] == '--version' :
+    if len(sys.argv) > 1 and sys.argv[1] == '--version':
         print('0.1')
+    else:
+        print('usage: python3 weave-witness.py [property_file] [witness_file]')
     exit(0)
 else:
-    witness_file = sys.argv[1]
+    property_file = sys.argv[1]
+    witness_file = sys.argv[2]
     classpath = {}
-    for cp in sys.argv[2:]:
+    conf = {}
+    with open(property_file, "r") as stream:
+        try:
+            conf = yaml.safe_load(stream)            
+        except yaml.YAMLError as e:
+            raise
+    #for cp in sys.argv[2:]:
+    for cp in conf['input_files']:
+        if cp.endswith("/common/"):
+            continue
+        cp = os.path.dirname(property_file) + "/" + cp
         for path, dirs, files in os.walk(cp):
             for name in files:
                 if fnmatch(name, '*.java'):
-                    package = path.replace(cp,'')[1:]
+                    package = path.replace(cp,'') 
                     filename = os.path.join(path, name)
                     classname = name
                     if len(package) != 0:
                         classname = package + "/" + classname
                     classpath[classname] = filename
 
-#print(classpath)
-
-
 # load witness
-with open(sys.argv[1]) as f:
+with open(witness_file) as f:
     xmlstring = f.read()
 
 xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count=1)
 witness = ET.fromstring(xmlstring)
 
-# TODO: check on type of witness
-
-
+# check on type of witness
+wtype = witness.find(".//data[@key='witness-type']").text
+if wtype != 'violation_witness':
+    exit(0)
 
 # find edge assumptions
 assumptions = {}
@@ -74,12 +86,8 @@ for e in witness.findall(".//data[@key='assumption']/.."):
 
 # print(assumptions)
 
-# witness tmp dir
-# TODO: actual tmp dir?
-wtTmp=tempfile.TemporaryDirectory()
-print(wtTmp)
-
 # weave witness and instance
+wtTmp = tempfile.mkdtemp()
 uid = 0
 for classname in classpath:
     filename = classpath[classname]
@@ -95,7 +103,7 @@ for classname in classpath:
                 for pos,line in enumerate(fin,1):
                     # print(str(pos) + " " + line)
                     if line.strip().startswith('class') or line.strip().startswith('public class'):
-                        fout.write("import org.sosy_lab.sv_benchmarks.Witness;\n\n")
+                        fout.write("import tools.aqua.concolic.Witness;\n\n")
                     if str(pos) in assumptions[classname]:
                         #print("  Assumptions on line: " + line)
                         varargs = ', '.join(assumptions[classname][str(pos)])
@@ -104,13 +112,5 @@ for classname in classpath:
                         #print(assumeCode)
                         line += assumeCode
                     fout.write(line)
-
-
-# compile
-
-# run gdart on benchmark
-
-# output verdict
-
-
+print(wtTmp)
 

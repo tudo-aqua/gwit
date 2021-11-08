@@ -1,6 +1,6 @@
 [submodule "verifier-stub"]
 	path = verifier-stub
-	url = ../../psyco/verifier-stub
+	url = ../../psyco/verifier-stub.git
 [submodule "dse"]
 	path = dse
 	url = ../../psyco/dse.git

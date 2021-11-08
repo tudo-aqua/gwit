@@ -20,8 +20,8 @@ fi
 
 sha=$(cat ${OFFSET}/version.txt)
 
-property=$1
-witness=$3
+property=$3
+witness=$2
 
 if [ "$property" == "-v" ]; then
   echo "gwit-0.1-$sha"

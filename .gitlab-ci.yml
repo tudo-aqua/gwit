@@ -12,9 +12,9 @@ build:
     - git submodule update --init --recursive
     - pip3 install pyyaml
     - ./compile-all.sh
-    - ./run-gwit.sh examples/benchmarks/spec1-5_product56.yml --witness examples/witnesses/spec1-5_product56.yml/witness.GraphML nevermind
-    - ./run-gwit.sh examples/benchmarks/assert2.yml --witness examples/witnesses/assert2.yml/witness.GraphML 
-    - ./run-gwit.sh examples/benchmarks/Ackermann01.yml --witness examples/witnesses/Ackermann01.yml/witness.GraphML dontcare
+    - ./run-gwit.sh --witness examples/witnesses/spec1-5_product56.yml/witness.GraphML examples/benchmarks/spec1-5_product56.yml
+    - ./run-gwit.sh --witness examples/witnesses/assert2.yml/witness.GraphML examples/benchmarks/assert2.yml 
+    - ./run-gwit.sh --witness examples/witnesses/Ackermann01.yml/witness.GraphML  examples/benchmarks/Ackermann01.yml
   artifacts:
     name: "gwit"
     paths:

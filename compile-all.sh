@@ -4,7 +4,7 @@ pushd dse;
   ./compile-jconstraints.sh
   mvn package;
 popd;
-pushd SPouT/espresso;
+pushd spout/espresso;
   mx --env native-ce build;
 popd;
 pushd verifier-stub;

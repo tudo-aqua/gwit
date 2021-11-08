@@ -76,9 +76,8 @@ $JAVA -cp $OFFSET/dse/target/dse-0.0.1-SNAPSHOT-jar-with-dependencies.jar tools.
 sed 's/[^[:print:]]//' _gdart.log > _gdart.processed
 mv _gdart.processed _gdart.log
 
-cat _gdart.log
-cat _gdart.err
-
+# cat _gdart.log
+# cat _gdart.err
 
 complete=`cat _gdart.log | grep -a "END OF OUTPUT"`
 errors=`cat _gdart.log | grep -a ERROR | grep -a java.lang.AssertionError | cut -d '.' -f 3`

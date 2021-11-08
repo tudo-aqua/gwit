@@ -10,10 +10,11 @@ build:
   script:
     - git rev-parse --short HEAD > version.txt
     - git submodule update --init --recursive
+    - pip3 install pyyaml
     - ./compile-all.sh
-    - ./run-gwit.sh examples/benchmarks/spec1-5_product56.yml examples/witnesses/spec1-5_product56.yml/witness.GraphML nevermind
-    - ./run-gwit.sh examples/benchmarks/assert2.yml examples/witnesses/assert2.yml/witness.GraphML 
-    - ./run-gwit.sh examples/benchmarks/Ackermann01.yml examples/witnesses/Ackermann01.yml/witness.GraphML dontcare
+    - ./run-gwit.sh examples/benchmarks/spec1-5_product56.yml --witness examples/witnesses/spec1-5_product56.yml/witness.GraphML nevermind
+    - ./run-gwit.sh examples/benchmarks/assert2.yml --witness examples/witnesses/assert2.yml/witness.GraphML 
+    - ./run-gwit.sh examples/benchmarks/Ackermann01.yml --witness examples/witnesses/Ackermann01.yml/witness.GraphML dontcare
   artifacts:
     name: "gwit"
     paths:
@@ -25,11 +26,11 @@ build:
         - LICENSE
         - dse/README.md
         - dse/LICENSE
-        - SPouT/README.md
-        - SPouT/LICENSE
-        - SPouT/espresso/README.md
-        - SPouT/espresso/LICENSE
-        - ./SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
+        - spout/README.md
+        - spout/LICENSE
+        - spout/espresso/README.md
+        - spout/espresso/LICENSE
+        - ./spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
         - verifier-stub/README.md
         - verifier-stub/LICENSE
         - ./dse/target/dse-0.0.1-SNAPSHOT-jar-with-dependencies.jar

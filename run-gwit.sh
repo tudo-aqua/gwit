@@ -13,7 +13,7 @@
 # specific language governing permissions and limitations under the License.
 
 OFFSET=$(dirname $BASH_SOURCE[0])
-SOLVER_FLAGS="-Ddse.dp=multi -Ddse.bounds=true -Ddse.bounds.iter=6 -Ddse.bounds.step=6 -Ddse.terminate.on=assertion -Ddse.eplore=BFS"
+SOLVER_FLAGS="-Ddse.dp=multi -Ddse.terminate.on=assertion -Ddse.eplore=BFS"
 if [[ -z "$OFFSET" ]]; then
     OFFSET="."
 fi
@@ -21,7 +21,7 @@ fi
 sha=$(cat ${OFFSET}/version.txt)
 
 property=$1
-witness=$2
+witness=$3
 
 if [ "$property" == "-v" ]; then
   echo "gwit-0.1-$sha"
@@ -59,11 +59,11 @@ echo "computed classpath: $classpath"
 echo "found main class: $mainclass"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    JAVAC=$OFFSET/SPouT/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/javac
-    JAVA=$OFFSET/SPouT/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/java
+    JAVAC=$OFFSET/spout/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/javac
+    JAVA=$OFFSET/spout/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/java
 else
-    JAVAC=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/javac
-    JAVA=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/java
+    JAVAC=$OFFSET/spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/javac
+    JAVA=$OFFSET/spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/java
 fi
 
 $JAVAC -cp $classpath $mainclass

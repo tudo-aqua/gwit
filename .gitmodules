@@ -1,9 +1,10 @@
 [submodule "verifier-stub"]
 	path = verifier-stub
-	url = git@github.com:tudo-aqua/verifier-stub.git
+	url = ../../psyco/verifier-stub
 [submodule "dse"]
 	path = dse
-	url = git@github.com:tudo-aqua/dse.git
+	url = ../../psyco/dse.git
 [submodule "spout"]
 	path = spout
-	url = git@github.com:tudo-aqua/spout.git
+	url = ../../psyco/gdart.git
+	branch = gdart-min-21.2.0

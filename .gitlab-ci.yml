@@ -12,9 +12,9 @@ build:
     - git submodule update --init --recursive
     - pip3 install pyyaml
     - ./compile-all.sh
-    - ./run-gwit.sh --witness examples/witnesses/spec1-5_product56.yml/witness.GraphML examples/benchmarks/spec1-5_product56.prp spec1-5_product56/
-    - ./run-gwit.sh --witness examples/witnesses/assert2.yml/witness.GraphML examples/benchmarks/assert2.prp assert2/ 
-    - ./run-gwit.sh --witness examples/witnesses/Ackermann01.yml/witness.GraphML  examples/benchmarks/Ackermann01.prp Ackermann01/
+    - ./run-gwit.sh --witness examples/witnesses/spec1-5_product56.yml/witness.GraphML examples/benchmarks/spec1-5_product56.prp examples/benchmarks/spec1-5_product56/
+    - ./run-gwit.sh --witness examples/witnesses/assert2.yml/witness.GraphML examples/benchmarks/assert2.prp examples/benchmarks/assert2/ 
+    - ./run-gwit.sh --witness examples/witnesses/Ackermann01.yml/witness.GraphML  examples/benchmarks/Ackermann01.prp examples/benchmarks/Ackermann01/
     - mkdir -p val_gwit/dse/target
     - mv version.txt val_gwit
     - mv run-gwit.sh val_gwit

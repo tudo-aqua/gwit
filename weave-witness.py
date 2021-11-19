@@ -39,7 +39,7 @@ else:
     for cp in sys.argv[2:]:
         if cp.endswith("/common/"):
             continue
-        cp = os.path.dirname(property_file) + "/" + cp
+        # cp = os.path.dirname(property_file) + "/" + cp
         for path, dirs, files in os.walk(cp):
             for name in files:
                 if fnmatch(name, '*.java'):

@@ -9,7 +9,7 @@ import tempfile
 from sys import exit
 from fnmatch import fnmatch
 from shutil import copyfile
-import yaml
+# import yaml
 
 def mkDirP(dirs):
     if not os.path.exists(dirs):
@@ -24,20 +24,19 @@ if len(sys.argv) <= 2:
     if len(sys.argv) > 1 and sys.argv[1] == '--version':
         print('0.1')
     else:
-        print('usage: python3 weave-witness.py [property_file] [witness_file]')
+        print('usage: python3 weave-witness.py [witness_file] [list of folders]')
     exit(0)
 else:
-    property_file = sys.argv[1]
-    witness_file = sys.argv[2]
+    witness_file = sys.argv[1]
     classpath = {}
-    conf = {}
-    with open(property_file, "r") as stream:
-        try:
-            conf = yaml.safe_load(stream)            
-        except yaml.YAMLError as e:
-            raise
-    #for cp in sys.argv[2:]:
-    for cp in conf['input_files']:
+    # conf = {}
+    # with open(property_file, "r") as stream:
+    #    try:
+    #        conf = yaml.safe_load(stream)            
+    #    except yaml.YAMLError as e:
+    #        raise
+    #for cp in conf['input_files']:
+    for cp in sys.argv[2:]:
         if cp.endswith("/common/"):
             continue
         cp = os.path.dirname(property_file) + "/" + cp

@@ -20,10 +20,9 @@ fi
 
 sha=$(cat ${OFFSET}/version.txt)
 
-property=$3
 witness=$2
 
-if [ "$property" == "-v" ]; then
+if [ "$1" == "-v" ]; then
   echo "gwit-0.1-$sha"
   exit
 fi
@@ -31,7 +30,7 @@ fi
 path=`pwd`
 classpath=$OFFSET/verifier-stub/target/verifier-stub-1.0.jar
 
-folder=`python3 weave-witness.py $property $witness`
+folder=`python3 weave-witness.py $witness ${@:4}`
 
 if [[ -z $folder ]]; then
   echo "Could not weave witness"

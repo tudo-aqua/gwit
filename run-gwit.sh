@@ -13,7 +13,7 @@
 # specific language governing permissions and limitations under the License.
 
 OFFSET=$(dirname $BASH_SOURCE[0])
-SOLVER_FLAGS="-Ddse.dp=multi -Ddse.terminate.on=assertion -Ddse.eplore=BFS"
+SOLVER_FLAGS="-Ddse.dp=multi -Ddse.bounds=true -Ddse.bounds.iter=6 -Ddse.bounds.step=6 -Ddse.terminate.on=assertion -Ddse.eplore=BFS -Ddse.b64encode=true -Djconstraints.multi=disableUnsatCoreChecking=true"
 if [[ -z "$OFFSET" ]]; then
     OFFSET="."
 fi

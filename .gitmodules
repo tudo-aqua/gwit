@@ -4,7 +4,8 @@
 [submodule "dse"]
 	path = dse
 	url = ../../psyco/dse.git
+	branch = witness
 [submodule "spout"]
 	path = spout
 	url = ../../psyco/gdart.git
-	branch = gdart-min-21.2.0
+	branch = witnesses

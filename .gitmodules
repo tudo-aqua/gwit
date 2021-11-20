@@ -1,11 +1,11 @@
 [submodule "verifier-stub"]
 	path = verifier-stub
-	url = ../../psyco/verifier-stub.git
+	url = https://github.com/tudo-aqua/verifier-stub.git
 [submodule "dse"]
 	path = dse
-	url = ../../psyco/dse.git
+	url = https://github.com/tudo-aqua/dse.git
 	branch = witness
 [submodule "spout"]
 	path = spout
-	url = ../../psyco/gdart.git
+	url = https://github.com/tudo-aqua/spout.git
 	branch = witnesses

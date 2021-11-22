@@ -96,6 +96,11 @@ fi
 
 # Should we try to remove tmp dir?
 
+if [[ ! -z $complete ]] && [[ "$err" -ne "0" ]]; then
+  echo "== ERROR"
+  exit 0
+fi
+
 if [[ -z $buggy ]] && [[ -z $skipped ]] && [[ ! -z $complete ]]; then
   if [[ "$err" -eq "0" ]]; then
     echo "== OK"

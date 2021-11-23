@@ -65,6 +65,53 @@ This approach works under a couple of assumptuions:
 - Assumptions are not on values that go intto method calls (at least not on 
   the line of the method call) 
 
+## Example
+
+### Original Program:
+
+```java
+import tools.aqua.concolic.Verifier;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String s = Verifier.nondetString();
+        if (s.contains("whoopsy")) {
+            assert false;
+              }
+    }
+}
+```
+
+### Witness Fragment
+
+```xml
+<edge source="n0" target="n1">
+  <data key="originfile">Main.java</data>
+  <data key="startline">6</data>
+  <data key="threadId">0</data>
+  <data key="assumption">s.equals("whoopsy")</data>
+  <data key="assumption.scope">java::LMain;.main([Ljava/lang/String;)V</data>
+</edge> 
+```
+
+### Modiied Program
+
+```java
+import tools.aqua.concolic.Verifier;
+import tools.aqua.concolic.Witness;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String s = Verifier.nondetString();
+        Witness.assume(0, s.equals("whoopsy"));
+        if (s.contains("whoopsy")) {
+            assert false;
+              }
+    }
+}
+```
 
 
 

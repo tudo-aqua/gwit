@@ -95,7 +95,7 @@ public class Main {
 </edge> 
 ```
 
-### Modiied Program
+### Modified Program
 
 ```java
 import tools.aqua.concolic.Verifier;

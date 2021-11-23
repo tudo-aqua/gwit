@@ -21,7 +21,7 @@ GWIT validates violation witnesses by weaving the assumptions made explicit in
 a witness into the original program under analysis and checks the modified program 
 with dynamic symbolic execution (i.e., DSE+SPouT).
 
-GWIT relies on the provided ```Witness``` class (part of ```verifier-stib```) for 
+GWIT relies on the provided ```Witness``` class (part of ```verifier-stub```) for 
 providing the infrastructure for checking assumptions in the code of a program:
 
 ```java
@@ -55,7 +55,7 @@ Witness.assume(0, a, b, c);
 ```
 
 into the code of the original program after the line on which assumptions were made.
-The calls to ```Verifier.assume``` limit the number of paths that have to explored
+The calls to ```Verifier.assume(...)``` limit the number of paths that have to explored
 by dynamic symbolic execution.
 
 This approach works under a couple of assumptuions:

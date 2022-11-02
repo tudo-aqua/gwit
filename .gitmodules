@@ -5,7 +5,3 @@
 	path = dse
 	url = https://github.com/tudo-aqua/dse.git
 	branch = witness
-[submodule "spout"]
-	path = spout
-	url = https://github.com/tudo-aqua/spout.git
-	branch = witnesses

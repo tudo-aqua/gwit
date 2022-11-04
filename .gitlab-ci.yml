@@ -24,11 +24,11 @@ build:
     - mv LICENSE val_gwit
     - mv dse/README.md val_gwit/dse/
     - mv dse/LICENSE val_gwit/dse/LICENSE
-    - mkdir -p val_gwit/spout
-    - mv spout/README.md val_gwit/spout/ 
-    - mv spout/LICENSE val_gwit/spout/
-    - mkdir -p val_gwit/spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
-    - mv spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/* val_gwit/spout/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
+    - mkdir -p val_gwit/SPouT
+    - mv SPouT/README.md val_gwit/SPouT/ 
+    - mv SPouT/LICENSE val_gwit/SPouT/
+    - mkdir -p val_gwit/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
+    - mv SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/* val_gwit/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/
     - mkdir -p val_gwit/verifier-stub/target
     - mv verifier-stub/README.md val_gwit/verifier-stub/
     - mv verifier-stub/LICENSE val_gwit/verifier-stub/

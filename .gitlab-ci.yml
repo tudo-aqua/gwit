@@ -6,7 +6,7 @@ stages:
 
 build:
   stage: build
-  image: $CI_REGISTRY/psyco/gdart/development:21.2.0
+  image: $CI_REGISTRY/psyco/gdart/development:22.2.0
   script:
     - git rev-parse --short HEAD > version.txt
     - git submodule update --init --recursive

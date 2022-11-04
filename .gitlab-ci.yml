@@ -38,3 +38,33 @@ build:
     name: "val_gwit"
     paths:
         - val_gwit
+
+witness-check-short:
+  stage: release
+  image: $CI_REGISTRY/sv-comp/sv-comp-base-images/vcloud-ready-witness:latest
+  script:
+    - export BENCHMARK_BASE=$(realpath --relative-to="${PWD}" /data/gdart-witnesses)
+    - echo "Benchmarks relative $BENCHMARK_BASE $PWD"
+    - >
+      echo '<?xml version="1.0"?>
+      <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+        <benchmark tool="gwit-tudo" timelimit="5 min" memlimit="4 GB" cpuCores="3">
+        <resultfiles>**.graphml</resultfiles>
+        <rundefinition name="sv-comp20_prop-reachsafety_java">
+          <tasks name="ReachSafety-Java">
+            <includesfile>'"${BENCHMARK_BASE}"'/witness.set</includesfile>
+            <propertyfile>'"${BENCHMARK_BASE}"'/java/properties/assert_java.prp</propertyfile>
+          </tasks>
+        </rundefinition>
+      </benchmark>' > val_gwit.xml
+    - cat val_gwit.xml
+    - /data/benchexec/contrib/vcloud-benchmark.py --vcloudMaster $VCLOUD_MASTER --vcloudClientHeap 1560  --vcloudAdditionalFiles ./val_gwit /data/sv-benchmarks/java/* /data/gdart-witnesses/* --vcloudJar /srv/vcloud/lib/vcloud.jar --no-container --tool-directory ./val_gwit  val_gwit.xml | tee vcloud.run
+    - $(cat vcloud.run | grep table-generator)
+  artifacts:
+    paths:
+      - results
+  dependencies:
+    - build
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: on_success

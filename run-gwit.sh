@@ -58,11 +58,16 @@ echo "computed classpath: $classpath"
 echo "found main class: $mainclass"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    JAVAC=$OFFSET/SPouT/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/javac
-    JAVA=$OFFSET/SPouT/sdk/mxbuild/darwin-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/Contents/Home/bin/java
+    JAVAC=$OFFSET/SPouT/sdk/mxbuild/darwin-aarch64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/Contents/Home/bin/javac
+    JAVA=$OFFSET/SPouT/sdk/mxbuild/darwin-aarch64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/Contents/Home/bin/java
 else
-    JAVAC=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/javac
-    JAVA=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA11/graalvm-espresso-native-ce-java11-21.2.0/bin/java
+    if [[ "$(uname -m)" == "aarch64" ]]; then
+        JAVAC=$OFFSET/SPouT/sdk/mxbuild/linux-aarch64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/bin/javac
+        JAVA=$OFFSET/SPouT/sdk/mxbuild/linux-aarch64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/bin/java
+    else 
+        JAVAC=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/bin/javac
+        JAVA=$OFFSET/SPouT/sdk/mxbuild/linux-amd64/GRAALVM_ESPRESSO_NATIVE_CE_JAVA17/graalvm-espresso-native-ce-java17-22.2.0.1-dev/bin/java
+    fi
 fi
 
 $JAVAC -cp $classpath $mainclass

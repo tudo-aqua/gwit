@@ -30,7 +30,8 @@ fi
 path=`pwd`
 classpath=$OFFSET/verifier-stub/target/verifier-stub-1.0.jar
 
-folder=`python3 weave-witness.py $witness ${@:4}`
+echo "python3 $OFFSET/weave-witness.py $witness ${@:4}"
+folder=`python3 $OFFSET/weave-witness.py $witness ${@:4}`
 
 if [[ -z $folder ]]; then
   echo "Could not weave witness"

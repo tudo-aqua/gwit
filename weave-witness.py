@@ -66,7 +66,7 @@ if wtype != 'violation_witness':
 assumptions = {}
 for e in witness.findall(".//data[@key='assumption']/.."):
     assumption_parts = list(e.find("data[@key='assumption']").itertext())
-    if list(e.find("data[@key='assumption']").iter())[1].tag == "bad" and len(assumption_parts) == 2:
+    if len(list(e.find("data[@key='assumption']").iter())) > 1 and list(e.find("data[@key='assumption']").iter())[1].tag == "bad" and len(assumption_parts) == 2:
         assume = assumption_parts[0] + "<bad/>" +assumption_parts[1]
     else:
         assume = assumption_parts[0]

@@ -68,6 +68,8 @@ for e in witness.findall(".//data[@key='assumption']/.."):
     assumption_parts = list(e.find("data[@key='assumption']").itertext())
     if len(list(e.find("data[@key='assumption']").iter())) > 1 and list(e.find("data[@key='assumption']").iter())[1].tag == "bad" and len(assumption_parts) == 2:
         assume = assumption_parts[0] + "<bad/>" +assumption_parts[1]
+    elif len(list(e.find("data[@key='assumption']").iter())) > 1 and list(e.find("data[@key='assumption']").iter())[1].tag == "BAD" and len(assumption_parts) == 2:
+        assume = assumption_parts[0] + "<BAD/>" +assumption_parts[1]
     else:
         assume = assumption_parts[0]
     assume = assume.replace(';', '').replace('=', '==')
@@ -92,6 +94,7 @@ for e in witness.findall(".//data[@key='assumption']/.."):
 # weave witness and instance
 wtTmp = tempfile.mkdtemp()
 uid = 0
+first_import = True
 for classname in classpath:
     filename = classpath[classname]
     mkDirP( os.path.dirname(wtTmp + "/" + classname))
@@ -105,8 +108,9 @@ for classname in classpath:
             with open(oname, 'wt') as fout:
                 for pos,line in enumerate(fin,1):
                     # print(str(pos) + " " + line)
-                    if line.strip().startswith('class') or line.strip().startswith('public class'):
+                    if (line.strip().startswith('class') or line.strip().startswith('public class')) and first_import:
                         fout.write("import tools.aqua.concolic.Witness;\n\n")
+                        first_import = False
                     if str(pos) in assumptions[classname]:
                         #print("  Assumptions on line: " + line)
                         varargs = ', '.join(assumptions[classname][str(pos)])

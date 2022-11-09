@@ -65,12 +65,16 @@ if wtype != 'violation_witness':
 # find edge assumptions
 assumptions = {}
 for e in witness.findall(".//data[@key='assumption']/.."):
-    assume = e.find("data[@key='assumption']").text
+    assumption_parts = list(e.find("data[@key='assumption']").itertext())
+    if list(e.find("data[@key='assumption']").iter())[1].tag == "bad" and len(assumption_parts) == 2:
+        assume = assumption_parts[0] + "<bad/>" +assumption_parts[1]
+    else:
+        assume = assumption_parts[0]
     assume = assume.replace(';', '').replace('=', '==')
     file = e.find("data[@key='originfile']").text
     line = e.find("data[@key='startline']").text
     scope = e.find("data[@key='assumption.scope']").text
-    # print(scope + " : " + assume)
+    #print(scope + " : " + assume)
     # FIXME: this breaks for static values that are 
     # initialized by Verifier.nondet(...)
     # if such instances exist, we may have to change 

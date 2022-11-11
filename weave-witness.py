@@ -72,6 +72,8 @@ for e in witness.findall(".//data[@key='assumption']/.."):
         assume = assumption_parts[0] + "<BAD/>" +assumption_parts[1]
     else:
         assume = assumption_parts[0]
+    if "equals" in assume:
+        assume = assume.replace("equals", "toString().equals")
     assume = assume.replace(';', '').replace('=', '==')
     file = e.find("data[@key='originfile']").text
     line = e.find("data[@key='startline']").text

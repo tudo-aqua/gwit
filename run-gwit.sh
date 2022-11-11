@@ -71,7 +71,15 @@ else
     fi
 fi
 
-$JAVAC -cp $classpath $mainclass
+rm compile.out
+$JAVAC -cp $classpath $mainclass 2>&1 |tee -a compile.out 
+
+UNRECHABLE=$(cat compile.out| grep "error: unreachable statement") 
+if [[ ! -z ${UNRECHABLE} ]]; then
+  echo "== DONT-KNOW"
+  exit 1
+fi
+
 
 echo "invoke DSE: $JAVA -cp $OFFSET/dse/target/dse-0.0.1-SNAPSHOT-jar-with-dependencies.jar tools.aqua.dse.DSELauncher $SOLVER_FLAGS -Ddse.executor=$OFFSET/executor.sh -Ddse.executor.args=\"-cp $classpath Main\""
 $JAVA -cp $OFFSET/dse/target/dse-0.0.1-SNAPSHOT-jar-with-dependencies.jar tools.aqua.dse.DSELauncher $SOLVER_FLAGS -Ddse.executor=$OFFSET/executor.sh -Ddse.executor.args="-cp $classpath Main" > _gdart.log 2> _gdart.err
